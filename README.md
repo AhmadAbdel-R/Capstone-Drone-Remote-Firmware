@@ -1,25 +1,25 @@
 # Capstone Drone Remote Firmware
 
-This repository contains firmware for the custom drone remote controller.
+Firmware repository for the handheld drone remote.
 
-The active firmware project is currently in:
+## Active Firmware Folder
 
 - `DUAL-NRF-REMOTE-FIRMWARE/`
 
-## Main Capabilities
+## Stack
 
-- ESP32-based remote firmware
-- Dual nRF24 links (control + telemetry)
-- TFT/LVGL user interface
-- Joystick and battery input handling
+- ESP32-based firmware
+- dual nRF24 links (control + telemetry)
+- TFT UI (LVGL)
+- joystick/button/battery input pipeline
 
-## Quick Start
+## Notes
+
+- Root repo tracks history and portfolio context.
+- The nested folder is the buildable PlatformIO project.
+
+## Build
 
 1. Open `DUAL-NRF-REMOTE-FIRMWARE` in PlatformIO.
-2. Build and upload for your target board.
-3. Open serial monitor and verify link/UI startup.
-
-## Why This Layout
-
-The root repo tracks portfolio and project-level history.
-The nested project folder keeps firmware sources isolated and reproducible.
+2. Build and upload for your board target.
+3. Monitor serial at `115200` for runtime diagnostics.
